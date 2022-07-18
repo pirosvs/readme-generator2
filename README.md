@@ -5,15 +5,28 @@
 
 ## Description
 <img src="" alt=""/>
-Purpose:
-- make a easy to use readme generator so that most of the readme can be filled out quickly and look professional
-- increases efficiency
 
-Skills:
-- node.js
-- inquirer and fs
-- using inquirer to ask questions and get back info from command line
-- using fs to create a file based on responses
+This project allows for the user to generate a simple yet professional readme file by answering a few questions in their terminal. A well-written readme is a must for any developper, as this is one of the primary methods of explaining to potential users what their product does, how to use it, and how it works. [sure some people who know how to code could stare at your code for however long and figure out how to use it or how its working but not everyone can do that and why waste the time when instead you could just write a useful readme]
+
+Languages used in this project include JavaScript and some HTML. Node is also used along with the fs to create and write the readme file and Inquirer to facilitate the question-response portion. Inquirer runs our questions in the user's terminal, JavaScript and template literals are used to create the look of the readme file, and fs is used to create the actual file itself, using the user's responses to the questions.
+
+So, we have a question, such as 
+`
+inquirer
+  .prompt([
+
+    // Title header
+    {
+      type: 'input',
+      message: 'What is your projects title?',
+      name: 'title',
+    },
+`
+And we can take that response and using our name as the section of the data we need to create the header of the readme using a template literal, such as 
+`
+return `# ${data.title}
+`
+Which should show up the same way as our title here does in the new file they've created.
 
 ## Credit
 
