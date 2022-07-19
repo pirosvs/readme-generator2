@@ -32,11 +32,10 @@ function renderLicenseSection(data) {
   if (data.license == "none") {
     return "";
   } else {
-    return `
-    ## License
+    return `## License
   
-    ${renderLicenseBadge(data)}
-    This project is licensed under the ${data.license} license.`;
+${renderLicenseBadge(data)}
+This project is licensed under the ${data.license} license.`;
   }
   // else {
   //   return `## License
