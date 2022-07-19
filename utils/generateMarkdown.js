@@ -61,14 +61,16 @@ function generateMarkdown(data) {
   ${data.installation}.
 
   ## Usage
-  ${data.usage}.` 
+  ${data.usage}.
+  ` 
 
   + renderLicenseSection(data) + 
 
   // ## License
   // This project is licensed under the ${data.license} license.
 
-  `## Contritbuting
+  `
+  ## Contritbuting
   To contribute to this project, please contact me by ${data.contribution}.
 
   ## Test
