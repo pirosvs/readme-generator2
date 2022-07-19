@@ -34,7 +34,7 @@ function renderLicenseSection(data) {
   } else {
     return `
     ## License
-    ${renderLicenseBadge()}
+    ${renderLicenseBadge(data)}
     This project is licensed under the ${data.license} license.
     `;
   }
@@ -61,7 +61,9 @@ function generateMarkdown(data) {
   ${data.installation}.
 
   ## Usage
-  ${data.usage}.` + renderLicenseSection() + 
+  ${data.usage}.` 
+
+  + renderLicenseSection(data) + 
 
   // ## License
   // This project is licensed under the ${data.license} license.
