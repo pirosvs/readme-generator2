@@ -19,20 +19,28 @@ function generateMarkdown(data) {
 
   This was accomplished through the use of ${data.skills}. The languages used in this project are ${data.language}.
 
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contritbuting)
+  - [Test](#test)
+  - [Questions](#questions)
+
   ## Installation
   ${data.installation}.
 
   ## Usage
   ${data.usage}.
 
-  ## Contritbutions
+  ## License
+  badge goes here or at top idk
+
+  ## Contritbuting
   To contribute to this project, please contact me by ${data.contribution}.
 
   ## Test
   To test this project, ${data.test}.
-
-  ## License
-  badge goes here or at top idk
 
   ## Questions
   For any questions, please contact me at ${data.email}. You can also find me on <a href="https://github.com/${data.github}">${data.github}</a>.
