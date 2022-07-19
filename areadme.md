@@ -22,7 +22,7 @@
   ## License
   
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
-This project is licensed under the MIT license. 
+This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>. 
 
   ## Contritbuting
   To contribute to this project, please contact me by a.

@@ -35,14 +35,8 @@ function renderLicenseSection(data) {
     return `## License
   
 ${renderLicenseBadge(data)}
-This project is licensed under the ${data.license} license.`;
+This project is licensed under the ${renderLicenseLink(data)}.`;
   }
-  // else {
-  //   return `## License
-
-  //   ${renderLicenseBadge(data)}
-  //   This project is licensed under the ${renderLicenseLink(data)}.`;
-  // }
 }
 
 // TODO: Create a function to generate markdown for README
