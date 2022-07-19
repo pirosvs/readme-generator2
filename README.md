@@ -34,7 +34,7 @@ return `# ${data.title}
 Which should show up the same way as our title here does in the new file they've created.
 
 ## Credit
-Credit to Manan (manan1995?) with AskBCS for helping me understand why my code wasn't running correctly and to all the people who tried to help me understand what exactly was wanted for the initializing feature both in my cohort and my personal life, especially my housemate Lyra who actually managed to explain what was being asked and why in a way that made sense to me.
+Credit to Manan (manan1995?) with AskBCS for helping me understand why my code wasn't running correctly, Adam (adamjabundis) for helping me fix my license functions and section to appear correctly and explain why things weren't pulling data correctly, and to all the people who tried to help me understand what exactly was wanted for the initializing feature both in my cohort and my personal life, especially my housemate Lyra who actually managed to explain what was being asked and why in a way that made sense to me.
 
 ## License
 This project falls under the MIT license.
