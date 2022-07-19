@@ -33,6 +33,7 @@ function renderLicenseSection(data) {
     return "";
   } else {
     return `## License
+    
     ${renderLicenseBadge(data)}
     This project is licensed under the ${renderLicenseLink(data)}.`;
   }
