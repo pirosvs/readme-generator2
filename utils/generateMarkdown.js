@@ -18,10 +18,10 @@ function renderLicenseLink(data) {
   if (data.license == "none") {
     return "";
   } else if (data.license == "MIT") {
-    let badgeLink = `<a href="https://opensource.org/licenses/MIT"></a>`
+    let badgeLink = `<a href="https://opensource.org/licenses/MIT">MIT license</a>`
     return badgeLink;
   } else if (data.license == "GNU GPLv3") {
-    let badgeLink = `<a href="https://www.gnu.org/licenses/gpl-3.0"></a>`;
+    let badgeLink = `<a href="https://www.gnu.org/licenses/gpl-3.0">GNU GPLv3 license</a>`;
     return badgeLink;
   }
 }
@@ -34,7 +34,7 @@ function renderLicenseSection(data) {
   } else {
     return `## License
     ${renderLicenseBadge(data)}
-    This project is licensed under the ${data.license} license.`;
+    This project is licensed under the ${renderLicenseLink(data)}.`;
   }
 }
 
@@ -59,14 +59,11 @@ function generateMarkdown(data) {
   ${data.installation}.
 
   ## Usage
-  ${data.usage}.` 
+  ${data.usage}.
 
-  + renderLicenseSection(data) + 
+  ${renderLicenseSection(data)} 
 
-  // ## License
-  // This project is licensed under the ${data.license} license.
-
-  `## Contritbuting
+  ## Contritbuting
   To contribute to this project, please contact me by ${data.contribution}.
 
   ## Test

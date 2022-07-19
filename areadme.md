@@ -1,4 +1,4 @@
-# ex6
+# ex8
 
   ## Description
   The purpose of this project is a.
@@ -17,9 +17,13 @@
   a.
 
   ## Usage
-  a.## License
+  a.
+
+  ## License
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
-    This project is licensed under the MIT license.## Contritbuting
+    This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>. 
+
+  ## Contritbuting
   To contribute to this project, please contact me by a.
 
   ## Test
