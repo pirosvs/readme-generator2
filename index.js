@@ -83,8 +83,7 @@ inquirer
 // TODO: Create a function to write README file
 function writeToFile(data) {
   // let fileName = `${data.github.toLowerCase().split(' ').join('')}readme.md`;
-  // const generateMarkdownContent = generateMarkdown(data);
-  const generateMarkdownContent = "abcd";
+  const generateMarkdownContent = generateMarkdown(data);
   fs.writeFile(`${data.github.toLowerCase().split(' ').join('')}readme.md`, generateMarkdownContent, (err) =>
       err ? console.log(err) : console.log('Successfully created readme.md!')
     );
