@@ -44,6 +44,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Description
+  ${renderLicenseBadge(data)}
   The purpose of this project is ${data.purpose}.
 
   This was accomplished through the use of ${data.skills}. The languages used in this project are ${data.language}.
