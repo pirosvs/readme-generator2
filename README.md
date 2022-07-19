@@ -1,7 +1,6 @@
 # readme-generator2
 
 ## Example
-(video source here)
 <iframe src="https://drive.google.com/file/d/1Vw33WqyBXgZrCQeRICt3dSAyFnKy43EL/view?usp=sharing" title ="Demonstration video"></iframe>
 
 ## Table of Contents
@@ -10,7 +9,6 @@
 - [License](#license)
 
 ## Description
-<img src="" alt=""/>
 
 This project allows for the user to generate a simple yet professional readme file by answering a few questions in their terminal. A well-written readme is a must for any developper, as this is one of the primary methods of explaining to potential users what their product does, how to use it, and how it works. [sure some people who know how to code could stare at your code for however long and figure out how to use it or how its working but not everyone can do that and why waste the time when instead you could just write a useful readme]
 
