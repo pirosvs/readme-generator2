@@ -5,7 +5,7 @@
 
   ## Table of Contents
   - [Description](#description)
-  - [Credits](#credits)
+  - [Credit](#credit)
   - [License](#license)
 
 ## Description
