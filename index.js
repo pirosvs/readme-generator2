@@ -1,10 +1,13 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 const inclGenMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = await inquirer.prompt([])
+.then(generateMarkdown())
+  .then(writeToFile());
 
 inquirer
   .prompt([
@@ -62,7 +65,7 @@ inquirer
     {
       type: 'checkbox',
       message: 'What license are you using?',
-      choices: ["MIT", "GNU GPLv3"],
+      choices: ["MIT", "GNU GPLv3", "none"],
       name: 'license',
     },
 
@@ -77,12 +80,14 @@ inquirer
       message: 'What is your email address?',
       name: 'email',
     },
-  ])
+  ]).then(generateMarkdown())
+      .then(writeToFile());
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+  // let fileName = `${data.github.toLowerCase().split(' ').join('')}readme.md`;
   const generateMarkdownContent = generateMarkdown(data);
-  fs.writeFile(`${data.github}readme.md`, generateMarkdownContent, (err) =>
+  fs.writeFile(`${data.github.toLowerCase().split(' ').join('')}readme.md`, generateMarkdownContent, (err) =>
       err ? console.log(err) : console.log('Successfully created readme.md!')
     );
 }

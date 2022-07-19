@@ -17,7 +17,7 @@ function generateMarkdown(data) {
   ## Description
   The purpose of this project is ${d-purpose}.
 
-  This was accomplished through ${d-skills}. The languages used in this project are ${d-language}.
+  This was accomplished through the use of ${d-skills}. The languages used in this project are ${d-language}.
 
   ## Installation
   ${installation}.
