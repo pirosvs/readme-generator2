@@ -15,27 +15,27 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Description
-  The purpose of this project is ${d-purpose}.
+  The purpose of this project is ${data.purpose}.
 
-  This was accomplished through the use of ${d-skills}. The languages used in this project are ${d-language}.
+  This was accomplished through the use of ${data.skills}. The languages used in this project are ${data.language}.
 
   ## Installation
-  ${installation}.
+  ${data.installation}.
 
   ## Usage
-  ${usage}.
+  ${data.usage}.
 
   ## Contritbutions
-  To contribute to this project, please contact me by ${contribution}.
+  To contribute to this project, please contact me by ${data.contribution}.
 
   ## Test
-  To test this project, ${test}.
+  To test this project, ${data.test}.
 
   ## License
   badge goes here or at top idk
 
   ## Questions
-  For any questions, please contact me at ${email}. You can also find me on <a href="https://github.com/${github}">${github}</a>.
+  For any questions, please contact me at ${data.email}. You can also find me on <a href="https://github.com/${data.github}">${data.github}</a>.
 
   `;
 }

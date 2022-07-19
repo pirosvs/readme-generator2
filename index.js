@@ -2,12 +2,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const inclGenMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = await inquirer.prompt([])
-.then(generateMarkdown())
-  .then(writeToFile());
+// const questions = []
 
 inquirer
   .prompt([
@@ -23,17 +20,17 @@ inquirer
     {
       type: 'input',
       message: 'What is the purpose of your project?',
-      name: 'd-purpose',
+      name: 'purpose',
     },
     {
       type: 'input',
       message: 'What skills did you use to make this project?',
-      name: 'd-skills',
+      name: 'skills',
     },
     {
       type: 'input',
       message: 'What languages did you need for this project?',
-      name: 'd-language',
+      name: 'language',
     },
     {
       type: 'input',
@@ -80,13 +77,14 @@ inquirer
       message: 'What is your email address?',
       name: 'email',
     },
-  ]).then(generateMarkdown())
-      .then(writeToFile());
+  ])
+      .then(writeToFile);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
   // let fileName = `${data.github.toLowerCase().split(' ').join('')}readme.md`;
-  const generateMarkdownContent = generateMarkdown(data);
+  // const generateMarkdownContent = generateMarkdown(data);
+  const generateMarkdownContent = "abcd";
   fs.writeFile(`${data.github.toLowerCase().split(' ').join('')}readme.md`, generateMarkdownContent, (err) =>
       err ? console.log(err) : console.log('Successfully created readme.md!')
     );
