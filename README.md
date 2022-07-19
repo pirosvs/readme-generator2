@@ -2,7 +2,7 @@
 
 ## Example
 (video source here)
-<iframe src="https://drive.google.com/file/d/1Vw33WqyBXgZrCQeRICt3dSAyFnKy43EL/view?usp=sharing"></iframe>
+<iframe src="https://drive.google.com/file/d/1Vw33WqyBXgZrCQeRICt3dSAyFnKy43EL/view?usp=sharing" title ="Demonstration video"></iframe>
 
 ## Table of Contents
 - [Description](#description)
