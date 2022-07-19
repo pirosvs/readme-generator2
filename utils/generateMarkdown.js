@@ -33,10 +33,16 @@ function renderLicenseSection(data) {
     return "";
   } else {
     return `## License
-    
+  
     ${renderLicenseBadge(data)}
-    This project is licensed under the ${renderLicenseLink(data)}.`;
+    This project is licensed under the ${data.license} license.`;
   }
+  // else {
+  //   return `## License
+
+  //   ${renderLicenseBadge(data)}
+  //   This project is licensed under the ${renderLicenseLink(data)}.`;
+  // }
 }
 
 // TODO: Create a function to generate markdown for README
