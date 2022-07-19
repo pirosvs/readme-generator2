@@ -4,9 +4,9 @@ function renderLicenseBadge(license) {
   if (data.license == "none") {
     return "";
   } else if (data.license == "MIT") {
-    return `<a href="https://img.shields.io/badge/License-MIT-yellow.svg"></a>`;
+    return `<img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>`;
   } else if (data.license == "GNU GPLv3") {
-    return `<a href="https://img.shields.io/badge/License-GPLv3-blue.svg"></a>`;
+    return `<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"/>`;
   }
 }
 
