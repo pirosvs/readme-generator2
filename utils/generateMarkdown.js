@@ -4,9 +4,11 @@ function renderLicenseBadge(license) {
   if (data.license == "none") {
     return "";
   } else if (data.license == "MIT") {
-    return `<img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>`;
+    let badge = `<img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>`;
+    return badge;
   } else if (data.license == "GNU GPLv3") {
-    return `<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"/>`;
+    let badge = `<img src="https://img.shields.io/badge/License-GPLv3-blue.svg"/>`;
+    return badge;
   }
 }
 
@@ -16,9 +18,11 @@ function renderLicenseLink(license) {
   if (data.license == "none") {
     return "";
   } else if (data.license == "MIT") {
-    return `<a href="https://opensource.org/licenses/MIT"></a>`;
+    let badgeLink = `<a href="https://opensource.org/licenses/MIT"></a>`
+    return badgeLink;
   } else if (data.license == "GNU GPLv3") {
-    return `<a href="https://www.gnu.org/licenses/gpl-3.0"></a>`;
+    let badgeLink = `<a href="https://www.gnu.org/licenses/gpl-3.0"></a>`;
+    return badgeLink;
   }
 }
 
@@ -27,10 +31,12 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (data.license == "none") {
     return "";
-  } else if (data.license == "MIT") {
-    return ;
-  } else if (data.license == "GNU GPLv3") {
-    return ;
+  } else {
+    return `
+    ## License
+    ${renderLicenseBadge()}
+    This project is licensed under the ${data.license} license.
+    `;
   }
 }
 

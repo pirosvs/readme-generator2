@@ -1,26 +1,34 @@
-# ex2
+# ex3
 
   ## Description
-  The purpose of this project is a.
+  The purpose of this project is to make a funny readme file.
 
-  This was accomplished through the use of a. The languages used in this project are a.
+  This was accomplished through the use of none, whatsoever. The languages used in this project are there is no language in this project.
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contritbuting)
+  - [Test](#test)
+  - [Questions](#questions)
 
   ## Installation
-  a.
+  s.
 
   ## Usage
-  a.
+  b.
 
-  ## Contritbutions
+  ## License
+  This project is licensed under the MIT license.
+
+  ## Contritbuting
   To contribute to this project, please contact me by a.
 
   ## Test
   To test this project, a.
 
-  ## License
-  badge goes here or at top idk
-
   ## Questions
-  For any questions, please contact me at email@email.com. You can also find me on <a href="https://github.com/pirosvs">pirosvs</a>.
+  For any questions, please contact me at mail. You can also find me on <a href="https://github.com/pirosvs">pirosvs</a>.
 
   

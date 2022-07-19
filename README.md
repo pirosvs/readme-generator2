@@ -3,6 +3,11 @@
 ## Example
 (video source here)
 
+  ## Table of Contents
+  - [Description](#description)
+  - [Credits](#credits)
+  - [License](#license)
+
 ## Description
 <img src="" alt=""/>
 
